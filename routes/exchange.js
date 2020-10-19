@@ -4,7 +4,7 @@ var exchangeController = require('../controllers/exchange')
 
 
 router.get('/:id', exchangeController.getExchange);
-router.get('/', exchangeController.getExchange);
+router.get('/', exchangeController.getAllExchange);
 router.post('/', exchangeController.createExchange);
 router.patch('/:id', exchangeController.updateExchange); // patch is request update
 router.delete('/:id', exchangeController.deleteExchange);

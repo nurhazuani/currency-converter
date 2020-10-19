@@ -4,6 +4,7 @@ const exchange = {
 
      getAllExchange: async (req, res) => {
         let exchange = []
+        // console.log(res)
 		try {
             exchange = await Model.Exchange.findAll()
 		} catch(e) {
@@ -16,7 +17,7 @@ const exchange = {
     getExchange: async (req, res) => {
         let exchange = []
         
-        console.log(req)
+        // console.log(req)
 
 		try {
 			exchange = await Model.Exchange.findOne({
